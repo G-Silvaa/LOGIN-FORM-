@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="./login.js"></script>
+    
+    <title>Document</title>
+</head>
+
+<body>
+    
+        <section class="container">
+            <section class="containerleft">
+                <nav>
+                    <img src="./images/logo.svg" alt="Logo camp.in">
+                </nav>
+               
+                <section class="containerp">
+                    <div class="containerlogin">
+                       
+                        <form action="get">
+
+                            <div class="tittle">
+                                <h1><img src="./images/log-in.svg" alt="loginform"> Faça seu login</h1>
+                                <p>Entre com suas informações de cadastro</p>
+                            </div>
+
+                            <div class="email">
+                                <label for="">E-mail</label>
+                            </div>
+                            <div class="text">
+                                <input class="textt" type="text" placeholder="Digite seu e-mail" required type="email">
+                            </div>
+
+                            <div class="senha">
+                                <label for="">Senha</label>
+                            </div>
+                            <div class="text">
+                                <input class="passwd" type="password" placeholder="Digite sua senha" required type="password">
+                                <img class="eye" src="./images/eye.svg" alt="">
+                            </div>
+                            <div class="checkbox">
+                                <input class="check" type="checkbox" placeholder="Lembre-se">
+                                <span>Lembre-se</span>
+
+                                 <a href="">Esqueci minha senha</a>
+                            </div>
+                            <div class="button">
+                                <button>ENTRAR</button>
+                            </div>
+                            <div class="registrar">
+                                <span><a href="">Não tem uma conta? Registre-se</a></span>
+                            </div>
+                            
+
+                        </form>
+                    </div>
+                </section>
+            </section>
+
+            <section class="containerright">
+               <img src="./images/side-image.jpg" alt="paisagem de fundo">
+            </section>
+        </section>
+   
+</body>
+
+</html>
+
+
+<html>
+    <script>
+
+        const senha = document.querySelector('.passwd');
+        const eye = document.querySelector('.eye');
+        
+        eye.onclick = () =>
+        {
+            if(senha.type === 'password')
+            {
+                senha.type = 'text'            }
+            else
+            {
+                senha.type = 'password'
+            }
+        }
+
+    </script>
+</html>
